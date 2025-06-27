@@ -3,6 +3,7 @@ import { Input } from '@/components/Input';
 import { FlatList, Image, Text, View } from 'react-native';
 
 import { MaterialIcons } from '@expo/vector-icons';
+import { Item } from '@/components/Item';
 
 export default function App() {
   return (
@@ -107,9 +108,16 @@ export default function App() {
             </View>
           </View>
           <FlatList
-            data={[]}
+            style={{ marginTop: 24 }}
+            data={['']}
             renderItem={() => {
-              return <></>;
+              return (
+                <Item
+                  ItemType={{ description: 'teste', done: false, id: 1 }}
+                  onCheck={() => {}}
+                  onRemove={() => {}}
+                />
+              );
             }}
             ListEmptyComponent={() => {
               return (
