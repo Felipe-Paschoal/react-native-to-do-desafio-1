@@ -12,7 +12,7 @@ export function Item(props: {
       style={{
         flexDirection: 'row',
         gap: 12,
-        alignItems: 'flex-start',
+        alignItems: 'center',
         backgroundColor: '#262626',
         padding: 12,
         borderRadius: 6,
